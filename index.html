@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body
+    class="bg-color-primary text-color-white tracking-wider "
+  >
+    <header class="sticky top-0 z-50 max-w-[1200px] mx-auto">
+      <nav class="container flex justify-between items-center">
+        <div class="py-5 text-color-secondary font-bold text-3xl">
+          <a href="#home"> <span class="text-color-white">Desi</span>Store. </a>
+        </div>
+        <div>
+          <ul class="hidden lg:flex items-center space-x-6">
+            <li>
+              <a
+                href="#home"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#features"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Products</a
+              >
+            </li>
+            <li>
+              <a
+                href="#testimonial"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Testimonial</a
+              >
+            </li>
+            <li>
+              <a
+                href="#pricing"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                href="#blog"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Shops</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <button
+                class="bg-color-secondary px-4 py-2 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200 flex gap-3"
+              >
+                Cart
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="#fff"
+                >
+                  <path fill="none" d="M0 0h24v24H0V0z" />
+                  <path
+                    d="M18 8h-2V6c0-2.76-2.24-5-5-5S6 3.24 6 6v2H4c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h14c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm7 14H8v-2h8v2zm0-4H8v-4h8v4z"
+                  />
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <!-- Mobile screen  -->
+        <div id="hamburger" class="lg:hidden cursor-pointer z-50">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div
+          id="menu"
+          class="hidden bg-color-primary-dark h-[100vh] absolute inset-0"
+        >
+          <ul class="h-full grid place-items-center py-20">
+            <li>
+              <a
+                id="hLink"
+                href="#home"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                id="hLink"
+                href="#features"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a
+                id="hLink"
+                href="#testimonial"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Testimonial</a
+              >
+            </li>
+            <li>
+              <a
+                id="hLink"
+                href="#pricing"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                id="hLink"
+                href="#blog"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                id="hLink"
+                href="#contact"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <button
+                class="bg-color-secondary px-4 py-2 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200 flex gap-3"
+              >
+                Cart
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="#fff"
+                >
+                  <path fill="none" d="M0 0h24v24H0V0z" />
+                  <path
+                    d="M18 8h-2V6c0-2.76-2.24-5-5-5S6 3.24 6 6v2H4c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h14c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm7 14H8v-2h8v2zm0-4H8v-4h8v4z"
+                  />
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="max-w-[1200px] mx-auto">
+      <section id="home" class="relative">
+        <div
+          class="w-80 h-80 bg-color-blob absolute top-0 -left-5 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full"
+        ></div>
+        <div
+          class="w-80 h-80 bg-color-blob absolute bottom-0 right-5 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full"
+        ></div>
+        <div
+          class="w-80 h-80 bg-color-secondary absolute top-0 right-0 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full"
+        ></div>
+        <div
+          class="w-80 h-80 bg-color-secondary absolute bottom-0 left-0 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full"
+        ></div>
+
+        <div class="container py-20">
+          <div class="flex flex-col items-center z-20 md:flex-row">
+            <div class="text-center mb-12 md:text-left md:w-1/2 md:pr-10">
+              <h1 class="text-3xl md:text-4xl font-bold leading-snug mb-4">
+                Welcome to Desi Store, where fashion meets affordability.
+              </h1>
+              <p class="leading-relaxed mb-10">
+                Dive into our curated collection of trendy apparel, accessories,
+                and more.
+              </p>
+              <button
+                class="bg-color-secondary px-5 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200"
+              >
+                Explore Now
+                
+              </button>
+            </div>
+            <div class="md:w-1/2">
+              <img src="/images/hero1.png" width="650px" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const navbar = document.querySelector('header');
+        window.onscroll = () => {
+            if(window.scrollY > 100) {
+                navbar.classList.add('bg-color-primary-dark');
+                navbar.classList.add('border-b');
+                navbar.classList.add('border-color-gray');
+            } else {
+                navbar.classList.remove('bg-color-primary-dark');
+                navbar.classList.remove('border-b');
+                navbar.classList.remove('border-color-gray');
+            }
+        }
+
+
+      // Mobile menu
+      const hamburger = document.querySelector("#hamburger");
+      const menu = document.querySelector("#menu");
+      const hLink = document.querySelectorAll("#hLink");
+      const faSolid = document.querySelector(".fa-solid");
+      hamburger.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+        faSolid.classList.toggle("fa-xmark");
+      });
+      hLink.forEach((link) => {
+        link.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+          faSolid.classList.toggle("fa-xmark");
+        });
+      });
+    </script>
+  </body>
+</html>
